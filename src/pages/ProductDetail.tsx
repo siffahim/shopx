@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ProductReview from "../../components/ProductDetail/ProductReview";
+import ProductReview from "../components/ProductDetail/ProductReview";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -32,8 +32,8 @@ const ProductDetail = () => {
             <p className="text-xl">
               {product?.rating?.rate}({product?.rating?.count})
             </p>
-            <button className="bg-purple-500 text-white py-3 px-3 rounded font-semibold text-lg">
-              ADD TO CART
+            <button className="btn text-white bg-purple-500 ">
+              Add to card
             </button>
           </div>
         </div>
